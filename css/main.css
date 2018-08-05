@@ -1,0 +1,129 @@
+#Phone {
+    background: rgb(255, 207, 207);
+    margin: 20px auto;
+    width: 400px;
+    height: 610px;
+}
+#container {
+    width: 400px;
+    height: 600px;
+}
+/* 状态栏 */
+#PhoneHead {
+    background: #000;
+    width: 400px;
+    height: 25px;
+}
+#clock {
+    position: absolute;
+    color: #fff;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 170px;
+    font-size: 10px;
+}
+/* 信号点 */
+#phoneSignal {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.circle {
+    position: relative;
+    float: left;
+    margin: 0 1px;
+    width: 8px;
+    height: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+/* 运营商种类 */
+.pnoneCard {
+    position: absolute;
+    color: #fff;
+    margin-top: 7px;
+    margin-left: 65px;
+    font-size: 10px;
+}
+/* 电池图标 */
+#phoneBattery {
+    position: relative;
+    float: right;
+    color: #fff;
+    height: 20px;
+    width: 130px;
+    font-size: 10px;
+}
+#phoneBattery .lockPic {
+    width: 20;
+    height: 20px;
+    margin-top: 3px;
+    float: left;
+}
+.batteryNum {
+    position: absolute;
+    color: #fff;
+    margin-top: 7px;
+    margin-left: 3px;
+    font-size: 10px;
+}
+/* 电池图标 */
+.batteryIcon {
+    position: absolute;
+    margin-top: 9px;
+    float: left;
+    margin-left: 55px;
+    height: 10px;
+    width: 25.5px;
+    border: 0.8px solid #fff;
+    border-radius: 10%;
+}
+.batteryIconLi {
+    position: absolute;
+    margin-top: 0.76px;
+    margin-left: 0.8px;
+    height: 7px;
+    width: 22.5px;
+    border-radius: 10%;
+    background: #fff;
+}
+.batteryIconR {
+    background: #fff;
+    width: 1.8px;
+    height: 3px;
+    margin-top: 12px;
+    margin-left: 81px;
+    -webkit-border-top-left-radius:0em;
+    -webkit-border-top-right-radius:10em;
+    -webkit-border-bottom-right-radius:10em;
+    -webkit-border-bottom-left-radius:0em;
+    -moz-border-radius-topleft:0em;
+    -moz-border-radius-topright:10em;
+    -moz-border-radius-bottomright:10em;
+    -moz-border-radius-bottomleft:0em;
+    border-top-left-radius:0em;
+    border-top-right-radius:10em;
+    border-bottom-right-radius:10em;
+    border-bottom-left-radius:0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
