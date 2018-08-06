@@ -38,6 +38,15 @@
     border-radius: 50%;
     border: 1px solid #ffffff;
 }
+.circle1 {
+    position: relative;
+    float: left;
+    margin: 0 1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
 /* 运营商种类 */
 .pnoneCard {
     position: absolute;
