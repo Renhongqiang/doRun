@@ -45,11 +45,13 @@ AMap.plugin('AMap.Geolocation',function(){//异步加载插件
    }
    window.onload = displayTime; //当onload事件发生时开始显示时间
 
-  //移动端下拉菜单点击箭头事件改变箭头图标
-  $(function(){
-    $("#ciid").addClass('circle'); // 初始化时添fa-chevron-right
-    $("#ciid").click(function() {
-        $(this).toggleClass('circle').toggleClass('circle1');//更改自己样式即改为向下箭头
-        alert("a");
-    });
-})
+   $("#ciid").click(function(){
+    // alert($(this).attr("class"));
+if($(this).hasClass("circle")){
+    $(this).removeClass("circle");
+    $(this).addClass("circle1");    
+}else {
+    $(this).removeClass("circle1");
+    $(this).addClass("circle");
+}
+});
