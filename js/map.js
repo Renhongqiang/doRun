@@ -45,13 +45,8 @@ AMap.plugin('AMap.Geolocation',function(){//异步加载插件
    }
    window.onload = displayTime; //当onload事件发生时开始显示时间
 
-   $("#ciid").click(function(){
-    // alert($(this).attr("class"));
-if($(this).hasClass("circle")){
-    $(this).removeClass("circle");
-    $(this).addClass("circle1");    
-}else {
-    $(this).removeClass("circle1");
-    $(this).addClass("circle");
+
+function chaCir(t){
+    //  alert($(t).attr("class"));
+    $(t).toggleClass("circle").toggleClass("circle1");
 }
-});
