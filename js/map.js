@@ -50,3 +50,70 @@ function chaCir(t){
     //  alert($(t).attr("class"));
     $(t).toggleClass("circle").toggleClass("circle1");
 }
+
+// 模块拖拽 距离 
+$(function(){  
+    var _move=false;//移动标记  
+    var _x,_y;//鼠标离控件左上角的相对位置  
+        $("#barPoint").click(function(){  
+            //alert("click");//点击（松开后触发）  
+            }).mousedown(function(e){  
+            _move=true;  
+            _x=e.pageX-parseInt($("#barPoint").css("left"));  
+            _y=e.pageY-parseInt($("#barPoint").css("top"));  
+            $("#barPoint").fadeTo(20, 0.5);//点击后开始拖动并透明显示  
+        });  
+        $(document).mousemove(function(e){  
+            if(_move){  
+                var x=e.pageX-_x;//移动时根据鼠标位置计算控件左上角的绝对位置  
+                var y=e.pageY-_y;
+                  
+                if(y < 0){
+                    y = 0;
+                }
+                if(y > 490){
+                    y = 490;
+                }
+                $("#bgBar").css({height:10+y});//bg的增加
+                $("#barPoint").css({top:y});//控件新位置 
+                $("#runSpanr").text(y + "." + e.pageY%100);//改变数值 
+                // $("#barPoint").css({top:y,left:x});//控件新位置  
+            }  
+        }).mouseup(function(){  
+        _move=false;  
+        $("#barPoint").fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明  
+      });  
+    }); 
+// 模块拖拽  时间
+$(function(){  
+    var _move=false;//移动标记  
+    var _x,_y;//鼠标离控件左上角的相对位置  
+        $("#TbarPoint").click(function(){  
+            //alert("click");//点击（松开后触发）  
+            }).mousedown(function(e){  
+            _move=true;  
+            _x=e.pageX-parseInt($("#TbarPoint").css("left"));  
+            _y=e.pageY-parseInt($("#TbarPoint").css("top"));  
+            $("#TbarPoint").fadeTo(20, 0.5);//点击后开始拖动并透明显示  
+        });  
+        $(document).mousemove(function(e){  
+            if(_move){  
+                var x=e.pageX-_x;//移动时根据鼠标位置计算控件左上角的绝对位置  
+                var y=e.pageY-_y;
+                  
+                if(y < 0){
+                    y = 0;
+                }
+                if(y > 490){
+                    y = 490;
+                }
+                $("#TbgBar").css({height:10+y});//bg的增加
+                $("#TbarPoint").css({top:y});//控件新位置 
+                $("#runSapnl").text(Math.floor(y/60) + ":" + y%60 + ":" + e.pageY%60);//改变数值 
+                // $("#barPoint").css({top:y,left:x});//控件新位置  
+            }  
+        }).mouseup(function(){  
+        _move=false;  
+        $("#TbarPoint").fadeTo("fast", 1);//松开鼠标后停止移动并恢复成不透明  
+      });  
+    }); 

@@ -1,3 +1,13 @@
+* {
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #Phone {
     background: rgb(255, 207, 207);
     margin: 20px auto;
@@ -115,6 +125,127 @@
     border-top-right-radius:10em;
     border-bottom-right-radius:10em;
     border-bottom-left-radius:0em;
+}
+#runText {
+    background: url(../images/run_bg.png) no-repeat;
+    background-size: 410px 90px;
+    width: 400px;
+    height:95px;
+    position: absolute;
+    margin-top: -80px;
+}
+#runText span {
+    color: #fff;
+    font-family: 黑体;
+    font-size: 20px;
+}
+#runSapnl {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 60px;
+}
+#runSpanr {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 280px;
+}
+
+/* 滑动条 */
+#lengthBar {
+    margin-top: 50px;
+    margin-left: 300px;
+    position: absolute;
+    height: 500px;
+    width: 10px;
+    border: rgb(4, 0, 255) 1px solid;
+    -moz-border-radius:2em; -webkit-border-radius:2em; border-radius:2em;
+}
+#bgBar {
+    margin-top: 0px;
+    margin-left: -1px;
+    position: absolute;
+    height: 0px;
+    width: 10px;
+    background: rgb(45, 143, 255);
+    -moz-border-radius:2em; -webkit-border-radius:2em; border-radius:2em;
+}
+#barPoint {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    margin-left: -5px;
+    background: rgb(0, 102, 255);
+    -moz-border-radius:10em; -webkit-border-radius:10em; border-radius:10em;
+    -moz-box-shadow:1px 1px 2px #333333, -1px -1px 2px #333333; -webkit-box-shadow:1px 1px 2px #333333, -1px -1px 2px #333333; box-shadow:1px 1px 2px #333333, -1px -1px 2px #333333;
+}
+/* 滑动条 */
+#timeBar {
+    margin-top: -610px;
+    margin-left: 810px;
+    position: absolute;
+    height: 500px;
+    width: 10px;
+    border: rgb(4, 0, 255) 1px solid;
+    -moz-border-radius:2em; -webkit-border-radius:2em; border-radius:2em;
+}
+#TbgBar {
+    margin-top: 0px;
+    margin-left: -1px;
+    position: absolute;
+    height: 0px;
+    width: 10px;
+    background: rgb(45, 143, 255);
+    -moz-border-radius:2em; -webkit-border-radius:2em; border-radius:2em;
+}
+#TbarPoint {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    margin-left: -5px;
+    background: rgb(0, 102, 255);
+    -moz-border-radius:10em; -webkit-border-radius:10em; border-radius:10em;
+    -moz-box-shadow:1px 1px 2px #333333, -1px -1px 2px #333333; -webkit-box-shadow:1px 1px 2px #333333, -1px -1px 2px #333333; box-shadow:1px 1px 2px #333333, -1px -1px 2px #333333;
+}
+
+#lbS1{
+    font-family: 黑体;
+    font-size: 25px;
+    color: #00ff22;
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 15px;
+}
+#lbS2{
+    font-family: 黑体;
+    font-size: 20px;
+    color: #0077ff;
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 40px;
+}
+#lbS3{
+    font-family: 黑体;
+    font-size: 20px;
+    color: #0077ff;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 530px;
+}
+#rs1 {
+    font-family: 黑体;
+    font-size: 25px;
+    color: #00ff22;
+    position: absolute;
+    margin-left: 790px;
+    margin-top: -640px;
+}
+#rs2 {
+    font-family: 黑体;
+    font-size: 20px;
+    color: #0077ff;
+    position: absolute;
+    margin-left: 790px;
+    margin-top: -620px;
 }
 
 
